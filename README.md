@@ -46,66 +46,104 @@ Dicho repositorio se divide en dos carpetas:
 
 Las librerías utilizadas en este repositorio han sido:
 
-# Tratamiento de datos
-# ------------------------------------------------------------------------------
+### Tratamiento de datos
+------------------------------------------------------------------------------
+
 import numpy as np
+
 import pandas as pd
+
 from tqdm import tqdm
 
-# Gráficos
-# ------------------------------------------------------------------------------
+### Gráficos
+------------------------------------------------------------------------------
+
 import matplotlib.pyplot as plt
+
 import seaborn as sns
 
-# Modelado y evaluación
-# ------------------------------------------------------------------------------
+### Modelado y evaluación
+------------------------------------------------------------------------------
+
 from sklearn.model_selection import train_test_split
+
 from sklearn.linear_model import LogisticRegression
+
 from sklearn.tree import DecisionTreeClassifier
+
 from sklearn.ensemble import RandomForestClassifier
+
 from sklearn import tree
-from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score , cohen_kappa_score, roc_curve,roc_auc_score
+
+from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score , 
+cohen_kappa_score, roc_curve,roc_auc_score
+
 from sklearn.model_selection import GridSearchCV
+
 from sklearn.ensemble import RandomForestRegressor
+
 from sklearn.tree import DecisionTreeRegressor
+
 from sklearn.linear_model import LinearRegression
+
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 
-#  Crossvalidation
-# ------------------------------------------------------------------------------
+###  Crossvalidation
+------------------------------------------------------------------------------
+
 from sklearn.model_selection import cross_val_score
+
 from sklearn.model_selection import cross_validate
+
 from sklearn import metrics
 
-# Estandarización variables numéricas y Codificación variables categóricas
-# ------------------------------------------------------------------------------
+### Estandarización variables numéricas y Codificación variables categóricas
+------------------------------------------------------------------------------
+
 from scipy import stats
+
 from sklearn.preprocessing import StandardScaler
+
 from sklearn.preprocessing import RobustScaler
+
 import math
+
 from sklearn.preprocessing import MinMaxScaler
+
 from sklearn.preprocessing import LabelEncoder # para realizar el Label Encoding 
+
 from sklearn.preprocessing import OneHotEncoder  # para realizar el One-Hot Encoding
 
-# Estadísticos
-# ------------------------------------------------------------------------------
+### Estadísticos
+------------------------------------------------------------------------------
+
 import statsmodels.api as sm
+
 from statsmodels.formula.api import ols
+
 import researchpy as rp
+
 from scipy.stats import skew
+
 from scipy.stats import kurtosistest
 
-# Gestión datos desbalanceados
-# ------------------------------------------------------------------------------
+### Gestión datos desbalanceados
+------------------------------------------------------------------------------
+
 from imblearn.under_sampling import RandomUnderSampler
+
 from imblearn.over_sampling import RandomOverSampler
+
 from imblearn.combine import SMOTETomek
 
-# Configuración warnings
-# ------------------------------------------------------------------------------
+### Configuración warnings
+------------------------------------------------------------------------------
+
 import warnings
+
 warnings.filterwarnings('ignore')
 
-# Establecer tamaño gráficas
-# ------------------------------------------------------------------------------
+### Establecer tamaño gráficas
+------------------------------------------------------------------------------
+
 plt.rcParams["figure.figsize"] = (15,15)
